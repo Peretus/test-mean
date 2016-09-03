@@ -2,10 +2,11 @@
 
 var express = require('express')
 var app = express();
-const details = {First: "Casey",
-                  Last: "McNeil",
-                  Occupation: "JS Developer"
-                  Email: "c@caseymcneil.com"
+const details = {
+                  "First": "Casey",
+                  "Last": "McNeil",
+                  "Occupation": "JS Developer"
+                  "Email": "c@caseymcneil.com"
                 }
 
 app.set('json spaces', 2)
