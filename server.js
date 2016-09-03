@@ -2,9 +2,10 @@
 
 var express = require('express');
 var app = express();
+app.set('json spaces', 2)
 
 app.get('/', function(req, res) {
-    res.send(
+    res.json(
       {
         "First": "Casey",
         "Last": "McNeil",
