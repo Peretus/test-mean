@@ -4,10 +4,17 @@ var express = require('express');
 var app = express();
 
 app.get('/', function(req, res) {
-    res.send('hello this is server and I am alive!');
+    res.send(
+      {
+        "First": "Casey",
+        "Last": "McNeil",
+        "Occupation": "JS Developer"
+        "Email": "c@caseymcneil.com"
+      }
+    );
 });
 
-app.listen(80);
+app.listen(3000);
 console.log('Listening on port 3000...');
 // /*
 // var cl = console.log;
