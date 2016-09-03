@@ -1,23 +1,22 @@
 // 'use strict';
 
-var express = require('express')
+var express = require('express');
 var app = express();
-const details = {
-                  "First": "Casey",
-                  "Last": "McNeil",
-                  "Occupation": "JS Developer"
-                  "Email": "c@caseymcneil.com"
-                }
-
 app.set('json spaces', 2)
 
 app.get('/', function(req, res) {
-    res.setHeader('Content-Type', 'application/json')
-    res.json(JSON.stringify(details))
+    res.json(
+      {
+        "First": "Casey",
+        "Last": "McNeil",
+        "Occupation": "JS Developer",
+        "Email": "c@caseymcneil.com"
+      }
+    )
 })
 
 app.listen(3000);
-console.log('Listening on port 3000...')
+console.log('Listening on port 3000...');
 // /*
 // var cl = console.log;
 // console.log = function(){
