@@ -7,7 +7,7 @@ app.get('/', function(req, res) {
     res.send('hello this is server and I am alive!');
 });
 
-app.listen(3000);
+app.listen(80);
 console.log('Listening on port 3000...');
 // /*
 // var cl = console.log;
